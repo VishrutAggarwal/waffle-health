@@ -4,9 +4,10 @@ import {Resources} from './components/Resources';
 import {Activities} from './components/Activities';
 import {Quiz} from './components/Quiz';
 import {Header} from './components/Header';
-import { Footer } from './components/Footer';
+// import { Footer } from './components/Footer';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import './App.scss';
+import Feedback from './components/Feedback';
 
 function App() {
   return (
@@ -19,6 +20,9 @@ function App() {
           </Route>
           <Route path = "/wish">
             <Wish />
+          </Route>
+          <Route path = "/feedback">
+            <Feedback />
           </Route>
           <Route path = "/activities">
             <Activities/>
